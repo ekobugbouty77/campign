@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Support Portal</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background: #1769aa;
+            color: white;
+            padding: 22px 8%;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+            background: white;
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            margin-bottom: 15px;
+            color: #1769aa;
+        }
+
+        .hero p {
+            color: #777;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .section-title h2 {
+            margin-bottom: 10px;
+        }
+
+        .ticket-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .ticket-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .ticket-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .ticket-card .icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .ticket-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .ticket-card p {
+            color: #777;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1769aa;
+            color: white;
+            text-decoration: none;
+            padding: 11px 20px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        .btn:hover {
+            background: #10558c;
+        }
+
+        .info {
+            background: #eaf3fc;
+            padding: 25px;
+            margin-top: 35px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 13px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 26px;
+            }
+
+            .navbar {
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">Employee Support</div>
+        <a href="#support">Submit Ticket</a>
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Employee Support Portal</h1>
+    <p>
+        Welcome to Employee Support Center.<br>
+        Submit your requests and get assistance from our support team.
+    </p>
+</section>
+
+<div class="container" id="support">
+
+    <div class="section-title">
+        <h2>How Can We Help You?</h2>
+        <p>Select a department to submit your support request.</p>
+    </div>
+
+    <div class="ticket-grid">
+
+        <div class="ticket-card">
+            <div class="icon">💻</div>
+            <h3>IT Support</h3>
+            <p>Technical issues, computer problems, software and network assistance.</p>
+            <a href="#" class="btn">Submit Ticket</a>
+        </div>
+
+        <div class="ticket-card">
+            <div class="icon">👥</div>
+            <h3>Human Resources</h3>
+            <p>Employee data, attendance, leave requests and HR assistance.</p>
+            <a href="#" class="btn">Submit Ticket</a>
+        </div>
+
+        <div class="ticket-card">
+            <div class="icon">💰</div>
+            <h3>Finance</h3>
+            <p>Payment, reimbursement, payroll and financial inquiries.</p>
+            <a href="#" class="btn">Submit Ticket</a>
+        </div>
+
+        <div class="ticket-card">
+            <div class="icon">🏢</div>
+            <h3>General Affairs</h3>
+            <p>Office facilities, maintenance and general operational requests.</p>
+            <a href="#" class="btn">Submit Ticket</a>
+        </div>
+
+    </div>
+
+    <div class="info">
+        <h3>Need Immediate Assistance?</h3>
+        <p>Contact our support team through the live chat available on this page.</p>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 Employee Support Portal. All Rights Reserved.
+</footer>
+
+<!-- ZOHO SALESIQ LIVE CHAT -->
+<script>
+window.$zoho = window.$zoho || {};
+$zoho.salesiq = $zoho.salesiq || {
+    ready: function() {}
+};
+</script>
+
+ <script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.com/widget?wc=siq3698c226a53ba13b6fa9bfcadabd697b71ac44ba05485960e2ff4de932e55c34" defer></script> 
+</body>
+</html>
